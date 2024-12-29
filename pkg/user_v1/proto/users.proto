@@ -6,9 +6,10 @@ syntax = "proto3";
 ////
 package users_v1;
 //  как генерируемый код должен быть организован для использования в Go. Важно для импорта пакетов
+// логическое назначение пакета для Go-кода (как его импортировать, к какому пакету он относится).
 option go_package = "github.com/Baltikov/CupiCuponProtoBuf/grpc/pkg/user_v1/generate;user_v1";
 // импорта
-// userV1 = "github.com/Baltikov/CupiCuponProtoBuf/grpc/pkg/user_v1/generate"
+// userV1 "github.com/Baltikov/CupiCuponProtoBuf/grpc/pkg/user_v1/generate"
 
 message InfoUser {
   string name = 1;
