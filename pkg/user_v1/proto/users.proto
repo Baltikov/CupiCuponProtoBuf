@@ -4,9 +4,11 @@ syntax = "proto3";
 // Описываем структуры message для ответов и запросов
 // Описываем service, методы CRUD
 ////
-package user_v1;
+package users_v1;
 //  как генерируемый код должен быть организован для использования в Go. Важно для импорта пакетов
-option go_package = "github.com/Baltikov/CupiCuponProtoBuf/grpc/pkg/user_v1;note_v1";
+option go_package = "github.com/Baltikov/CupiCuponProtoBuf/grpc/pkg/user_v1/generate;user_v1";
+// импорта
+// userV1 = "github.com/Baltikov/CupiCuponProtoBuf/grpc/pkg/user_v1/generate"
 
 message InfoUser {
   string name = 1;
