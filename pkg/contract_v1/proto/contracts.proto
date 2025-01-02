@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+option go_package = "github.com/Baltikov/CupiCuponProtoBuf/grpc/pkg/contracts_v1/generate;contracts_v1";
+
+message Contract {
+  int64 id = 1;
+  string title = 2;
+  string decription = 3;
+}
+
+message CreateContractRequest {
+    Contract contract = 1;
+}
+
+message CreateContractResponse {
+  int64 id = 1;
+}
+
+message GetContractRequest {
+  int64 id = 1;
+}
+
+message GetContractResponse {
+  Contract contract = 1;
+}
+
+service Contracts {
+  rpc CreateContract(CreateContractRequest) returns (CreateContractResponse);
+  rpc GetContract(GetContractRequest) returns (GetContractResponse);
+}
+
