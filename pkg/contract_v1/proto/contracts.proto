@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/Baltikov/CupiCuponProtoBuf/grpc/pkg/contracts_v1/generate;contracts_v1";
+option go_package = "github.com/Baltikov/CupiCuponProtoBuf/grpc/pkg/contract_v1/generate;contracts_v1";
 
 message Contract {
   int64 id = 1;
